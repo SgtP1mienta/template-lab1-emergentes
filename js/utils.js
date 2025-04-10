@@ -50,3 +50,12 @@ function showNotification(message) {
     }, 500);
   }, 3000);
 }
+
+const useState = (initialValue) => {
+  let state = initialValue;
+  const setState = (newValue) => {
+    state = newValue;
+    return state;
+  };
+  return [state, setState];
+};

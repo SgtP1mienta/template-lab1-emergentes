@@ -33,8 +33,8 @@
             <!-- Search and Create -->
             <div class="flex flex-col md:flex-row gap-4 mb-6">
                 <div class="flex-1 relative">
-                    <input type="text" name="search" class="w-full cyber-input rounded-lg ml-30 typing-cursor"
-                        placeholder="Buscar tarea..." />
+                    <input onchange="handleChangeFindTask(event)" type="text" name="search"
+                        class="w-full cyber-input rounded-lg ml-30 typing-cursor" placeholder="Buscar tarea..." />
                 </div>
                 <div>
                     <label for="task-modal" class="cyber-button flex items-center gap-2 cursor-pointer">
@@ -180,14 +180,10 @@
         </div>
     </div>
 
-    <div id="test"></div>
-
-
-    <script src="./js/test.js"></script>
+    <script src="js/Data.js"></script>
+    <script src="js/Task.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/utils.js">
-    </script>
-    <script src="./js/main.js"></script>
+    <script src="./js/utils.js"></script>
 </body>
 
 </html>
