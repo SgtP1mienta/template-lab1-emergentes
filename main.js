@@ -64,7 +64,16 @@ let tasks = taskTitles.map((title, index) => {
 });
 
 function loadData() {
-  // implementar el renderizado de las tareas
+  if (tasks.length > 0) {
+    // implementar el renderizado de las tareas
+    taskConatiner.innerHTML = tasks
+      .map((task) =>
+        Task.buildTaskCard(task)
+      )
+      .join("");
+  } else {
+    taskConatiner.innerHTML = `<div class="text-center text-gray-400 text-2xl">No hay tareas</div>`;
+  }
 }
 
 function postData(event) {
