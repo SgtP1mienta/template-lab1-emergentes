@@ -7,7 +7,6 @@
     <title>Futuristic Task Manager</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="min-h-screen" onload="loadData()">
@@ -33,7 +32,7 @@
             <!-- Search and Create -->
             <div class="flex flex-col md:flex-row gap-4 mb-6">
                 <div class="flex-1 relative">
-                    <input onchange="handleChangeFindTask(event)" type="text" name="search"
+                    <input id="search-input" type="text" name="search"
                         class="w-full cyber-input rounded-lg ml-30 typing-cursor" placeholder="Buscar tarea..." />
                 </div>
                 <div>
@@ -181,7 +180,6 @@
     </div>
 
     <script src="js/Data.js"></script>
-    <script src="js/Task.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/utils.js"></script>
 </body>
